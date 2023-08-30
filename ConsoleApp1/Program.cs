@@ -34,11 +34,19 @@ namespace Ejercicio5
 
                 //calcula cateto
                 catetoResul = Math.Sqrt((Math.Pow(hipotenusa, 2)) - (Math.Pow(cateto3, 2)));
-                
-                Console.Write("\n");
-                Console.Write("El Cateto resultante es: " + catetoResul);
-                Console.Write("\n");
 
+                if (Double.IsNaN(catetoResul))
+                {
+                    Console.Write("¡¡¡ La medida de la hipotenusa no puede ser menor a la del cateto ingresado !!! ");
+                    Console.Write("\n");
+                }
+
+                else
+                {
+                    Console.Write("\n");
+                    Console.Write("El Cateto resultante es: " + catetoResul);
+                    Console.Write("\n");
+                }
 
             }
             //solicitar valores para calcular hipotenusa
