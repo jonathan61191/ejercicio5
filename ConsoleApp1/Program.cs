@@ -50,12 +50,16 @@ namespace Ejercicio5
                 Console.Write("Ingrese el cateto 2: ");
                 cateto2 = Convert.ToDouble(Console.ReadLine());
 
+
+                //calcula hipotenusa
                 hipoteresul = Math.Sqrt((Math.Pow(cateto1, 2)) + (Math.Pow(cateto2, 2)));
 
                 Console.Write("\n");
                 Console.Write("La Hipotenusa resultante es: " + hipoteresul);
                 Console.Write("\n");
             }
+
+            //saca error cuando el numero de proceso no es correcto
             else if (defProceso != 1) {
                 Console.Write("\n");
                 Console.WriteLine("¡¡¡¡ El número ingresado NO es correcto !!!");
